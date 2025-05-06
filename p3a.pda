@@ -1,3 +1,4 @@
+alphabet: {a,b}
 start: q0
 accepting: {q8}
 q0 (_, _ -> $, q1)

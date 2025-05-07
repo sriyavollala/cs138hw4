@@ -1,0 +1,8 @@
+start: q0
+accepting: {q5}
+
+q0 (_, _ -> $, q1) 
+q1 (a, _ -> aaa, q2) 
+q2 (a, _ -> aaa, q3) (a, _ -> aa, q3)
+q3 (a, _ -> a, q3) (a, _ -> aa, q3) (a, _ -> aaa, q3) (b, a -> _, q4)
+q4 (b, a -> _, q4) (_, $ -> _, q5) 
